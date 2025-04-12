@@ -78,6 +78,7 @@ class _CalendarScreenState extends State<CalendarScreen> {
                 IconButton(
                   icon: Icon(Icons.chevron_left),
                   onPressed: () {
+                    print("Testing branch commit");
                     setState(() {
                       focusedMonth = DateTime(focusedMonth.year, focusedMonth.month - 1);
                     });
