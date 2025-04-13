@@ -72,7 +72,7 @@ class _ContentScreen extends State<ContentScreen>{
                 IconButton(
                   icon: Icon(Icons.chevron_right),
                   onPressed:(){
-                    print("click the button");
+                    
                     setState(() {
                     focusedMonth=DateTime(focusedMonth.year,focusedMonth.month+1 );
                     });
@@ -136,6 +136,7 @@ class _ContentScreen extends State<ContentScreen>{
                   child: ElevatedButton(
                     onPressed: selectedDate != null
                         ? () {
+                            print("click the button");
                             Navigator.push(context,
                       PageRouteBuilder(
                         pageBuilder: ( context,animation,secondaryAnimation) => DobYearScreen(),
