@@ -72,6 +72,7 @@ class _ContentScreen extends State<ContentScreen>{
                 IconButton(
                   icon: Icon(Icons.chevron_right),
                   onPressed:(){
+                    print("click the button");
                     setState(() {
                     focusedMonth=DateTime(focusedMonth.year,focusedMonth.month+1 );
                     });
